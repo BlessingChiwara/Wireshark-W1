@@ -15,5 +15,7 @@ Methodology:
 Filtered traffic to identify anomalous IP addresses interacting with internal hosts.
 
 Used the Follow > TCP Stream feature to reassemble fragmented data packets into readable text, revealing hidden communications.
+![](wireshark1.PNG)
+
 
 
