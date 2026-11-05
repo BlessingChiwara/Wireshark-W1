@@ -5,3 +5,15 @@ As part of a simulated Security Operations Center (SOC) Analyst role, I complete
 Role: SOC Analyst (Simulated)
 Tools Used: Wireshark
 Platform: NetworkWalks Labs
+
+🔬 Lab Write-ups
+Lab 1 & 2: Identify the Attacker & Follow TCP Stream (Parts 1 & 2)
+Objective: Locate the attacker's IP address and rebuild TCP conversations to read hidden messages.
+
+Methodology:
+
+Filtered traffic to identify anomalous IP addresses interacting with internal hosts.
+
+Used the Follow > TCP Stream feature to reassemble fragmented data packets into readable text, revealing hidden communications.
+
+
