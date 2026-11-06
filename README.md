@@ -10,12 +10,24 @@ Platform: NetworkWalks Labs
 Lab 1 & 2: Identify the Attacker & Follow TCP Stream (Parts 1 & 2)
 Objective: Locate the attacker's IP address and rebuild TCP conversations to read hidden messages.
 
-Methodology:
-
+**Methodology**
 Filtered traffic to identify anomalous IP addresses interacting with internal hosts.
-
 Used the Follow > TCP Stream feature to reassemble fragmented data packets into readable text, revealing hidden communications.
-![](wireshark1.PNG)
+![](wireshark 1.PNG)
+![](w2.PNG)
+![](w3.PNG)
+
+**Lab 3: HTTP Plain Text Credentials**
+Objective: Demonstrate the risks of unencrypted authentication by extracting credentials from HTTP traffic.
+
+**Methodology**
+Filtered using http.request.method == "POST" to locate the sign-in form submission.
+Inspected the HTML Form URL Encoded layer to extract the plain-text username and password.
+Key Takeaway: Highlighted the critical need for HTTPS to prevent credential sniffing.
+![](w5.png)
+![](Lab 6 Result - Blessing Chiwara.png)
+
+
 
 
 
