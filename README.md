@@ -25,7 +25,14 @@ Filtered using http.request.method == "POST" to locate the sign-in form submissi
 Inspected the HTML Form URL Encoded layer to extract the plain-text username and password.
 Key Takeaway: Highlighted the critical need for HTTPS to prevent credential sniffing.
 ![](w5.png)
-![](Lab 6 Result - Blessing Chiwara.png)
+![](Lab6Result.png)
+
+**Lab 4: Catch the Brute Force Attacker**
+Objective: Detect a password-guessing attack against an FTP server.
+**Methodology**
+Filtered for ftp traffic and observed a high volume of USER admin requests.
+Identified the attacker's IP by tracking the source of repeated 530 Login incorrect responses from the server.
+
 
 
 
