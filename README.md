@@ -32,6 +32,18 @@ Objective: Detect a password-guessing attack against an FTP server.
 **Methodology**
 Filtered for ftp traffic and observed a high volume of USER admin requests.
 Identified the attacker's IP by tracking the source of repeated 530 Login incorrect responses from the server.
+![](bruteforce.PNGP)
+![](Lab7Result.png)
+
+**Lab 5: Catch the Call Scammer (VoIP Analysis)**
+Objective: Investigate a VoIP call to identify the caller and replay the conversation.
+**Methodology:**
+Analyzed SIP (Session Initiation Protocol) traffic to locate the INVITE packet and identify the originating extension.
+Examined RTP (Real-time Transport Protocol) packets to determine the voice codec (Payload Type).
+Utilized Telephony > VoIP Calls to reconstruct and play back the audio stream, listening for the scammer's opening lines.
+
+
+
 
 
 
