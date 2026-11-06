@@ -5,6 +5,7 @@ As part of a simulated Security Operations Center (SOC) Analyst role, I complete
 Role: SOC Analyst (Simulated)
 Tools Used: Wireshark
 Platform: NetworkWalks Labs
+![](CompletedTasks.PNG)
 
 🔬 Lab Write-ups
 Lab 1 & 2: Identify the Attacker & Follow TCP Stream (Parts 1 & 2)
@@ -41,6 +42,19 @@ Objective: Investigate a VoIP call to identify the caller and replay the convers
 Analyzed SIP (Session Initiation Protocol) traffic to locate the INVITE packet and identify the originating extension.
 Examined RTP (Real-time Transport Protocol) packets to determine the voice codec (Payload Type).
 Utilized Telephony > VoIP Calls to reconstruct and play back the audio stream, listening for the scammer's opening lines.
+![](VOIP1.PNG)
+![](VOIP2.PNG)
+
+**🧠 Core Wireshark Filters Used**
+Throughout this project, I heavily utilized the following display filters:
+ip.addr == [IP_ADDRESS] - To isolate traffic to/from a specific host.
+http.request.method == "POST" - To find form submissions.
+ftp - To analyze file transfer and login attempts.
+sip and rtp - To isolate VoIP signaling and voice payloads.
+tcp.stream eq [number] - To view a specific, reconstructed TCP conversation.
+
+⚠️ Disclaimer
+This project was completed in a controlled, sandboxed lab environment provided by NetworkWalks. No live networks were targeted or captured without permission. All data analyzed was pre-captured for educational purposes.
 
 
 
